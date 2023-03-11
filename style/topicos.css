@@ -24,3 +24,28 @@
     font-weight: 700;
     font-size: 14px;
 }
+
+@media screen and (min-width:1024px) {
+    .topicos__titulo{
+        font-size: 24px;
+    }
+
+    .topicos__item{
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .topicos{
+        padding: 2em 15vw 6em 15vw;
+    }
+
+    .topicos__titulo{
+        font-size: 32px;
+    }
+
+    .topicos__botoes{
+        margin-top: 0;
+        padding: 2em 1em;
+    }
+}

@@ -22,6 +22,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+    padding: 100%;
 }
 
 .container__imagem{
@@ -34,6 +35,14 @@
     top: 100%;
     width: 70vw;
     font-family: var(--fonte-principal);
+}
+
+.container__botao:checked ~ .container__fundo > .cabeçalho__menu{
+    background-image: url(/img/Menu\ Aberto.svg);
+}
+
+.container__botao:checked ~ .container__fundo{
+    background: var(--azul-degrade);
 }
 
 .container__botao:checked~.lista-menu{
@@ -63,3 +72,94 @@
     font-weight: 400;
 }
 
+.icones:hover{
+    transform: scale(1.1);
+}
+
+.container__titulo, .abas, .container__texto{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabeçalho__menu{
+        display: none;
+    }
+    
+    .container__titulo{
+        display: block;
+    }
+
+    .container__titulo, .titulo__negrito {
+        font-family: var(--fonte-secundaria);
+        color: #000000;
+        font-size: 30px;
+    }
+
+    .titulo__negrito{
+        font-weight: 700;
+    }
+
+    .abas{
+        display: flex;
+    }
+
+    .abas__item{
+        padding: 2em 1em;
+    }
+
+    .abas__item:hover{
+        transform: scale(1.1);
+    }
+    .abas__link{
+        color: #000000;
+    }
+
+    .container__imagem.transparente{
+        display: none;
+    }
+
+    .abas__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .abas__botao:checked ~ .abas__fundo > .abas__item{
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .abas__botao{
+        display: none;
+    }
+
+    .lista-menu__item:hover{
+        background: var(--azul-degrade);
+        
+    }
+    
+    .lista-menu__item:hover>.lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabeçalho{
+        padding: 0 2em;
+    }
+    
+    .abas{
+        margin: 0 auto 0 5em;
+    }
+    
+    .container__texto{
+        display: block;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        margin-right: 2em;
+    }
+}

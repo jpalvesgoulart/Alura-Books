@@ -72,10 +72,6 @@
     font-weight: 400;
 }
 
-.icones:hover{
-    transform: scale(1.1);
-}
-
 .container__titulo, .abas, .container__texto{
     display: none;
 }
@@ -107,9 +103,10 @@
         padding: 2em 1em;
     }
 
-    .abas__item:hover{
-        transform: scale(1.1);
+    .abas__fundo{
+        cursor: pointer;
     }
+    
     .abas__link{
         color: #000000;
     }
@@ -133,8 +130,7 @@
     }
 
     .lista-menu__item:hover{
-        background: var(--azul-degrade);
-        
+        background: var(--azul-degrade); 
     }
     
     .lista-menu__item:hover>.lista-menu__link{

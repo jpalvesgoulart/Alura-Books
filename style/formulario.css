@@ -65,7 +65,7 @@
     width: 16px;
     height: 16px;
     margin: 0 .5em;
-    background-image: url('../img/warning.png');
+    background-image: url('../img/form/warning.png');
     background-repeat: no-repeat;
     background-size: contain;
 }

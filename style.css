@@ -1,7 +1,6 @@
 @import url("/style/header.css");
 @import url("/style/banner.css");
 @import url("/style/carrossel.css");
-@import url("/style/card.css");
 @import url('/style/topicos.css');
 @import url('/style/contato.css');
 @import url('/style/rodape.css');
@@ -19,6 +18,14 @@
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: 'Poppins', sans-serif;
     --fonte-secundaria: 'Josefin Sans', sans-serif;
+
+    --bg-color: #ffffff;
+    --button-color: #326589;
+    --text-title-color: #fc6621;
+    --text-description-color: #fc6621;
+    --text-price-color: #002f52;
+    --text-author-color: #858585;
+    --text-tag-color: #9c9c9c;
 }
 
 body {

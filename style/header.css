@@ -18,7 +18,7 @@
 .cabeçalho__menu{
     width: 24px;
     height: 24px;
-    background-image: url("../img/Menu.svg");
+    background-image: url("../img/header/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -38,7 +38,7 @@
 }
 
 .container__botao:checked ~ .container__fundo > .cabeçalho__menu{
-    background-image: url(/img/Menu\ Aberto.svg);
+    background-image: url(/img/header/Menu\ Aberto.svg);
 }
 
 .container__botao:checked ~ .container__fundo{
@@ -50,7 +50,7 @@
 }
 
 .container__botao:checked~.cabeçalho__menu{
-    background-image: url(../img/MenuAlt.svg);
+    background-image: url(../img/header/MenuAlt.svg);
 }
 
 .lista-menu__titulo, .lista-menu__item{
@@ -70,6 +70,11 @@
     background-clip: text;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+.container__ancora{
+    display: flex;
+    align-items: center;
 }
 
 .container__titulo, .abas, .container__texto{
